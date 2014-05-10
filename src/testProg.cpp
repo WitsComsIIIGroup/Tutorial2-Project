@@ -18,30 +18,36 @@ int compare (const void * a, const void * b)
 void testProg(int matrixSize){
 	int array [matrixSize];
 
-	cout<<"================";
-	cout<<"Quick Sort Sort";
-	cout<<"================";
-	//For QuickSort
-	/*genArray(array,matrixSize);
+	cout<<"================" << endl;
+	cout<<"Quick Sort Sort" << endl;
+	cout<<"================" << endl;
+	cout<<"Generated Array" << endl;
+	genArray(array,matrixSize);
 	printArray(array,matrixSize);
-	Still figuring out how to implement quicksort
-	printArray(array,matrixSize);*/
+	cout<< endl;
+	cout<<"Sorted Array" << endl;
+	//Still figuring out how to implement quicksort
+	printArray(array,matrixSize);
 
-	cout<<"================";
-	cout<<"Heap Sort";
-	cout<<"================";
-	//For Heap Sort
+	cout<<"================" << endl;
+	cout<<"Heap Sort" << endl;
+	cout<<"================" << endl;
+	cout<<"Permuted Array" << endl;
 	permuteArray(array,matrixSize);
 	printArray(array,matrixSize);
+	cout<< endl;
+	cout<<"Sorted Array" << endl;
 	heapSort(array,matrixSize);
 	printArray(array,matrixSize);
 
-	cout<<"================";
-	cout<<"Bubble Sort";
-	cout<<"================";
-	//For Bubble Sort
+	cout<<"================" << endl;
+	cout<<"Bubble Sort" << endl;
+	cout<<"================" << endl;
+	cout<<"Generated Array" << endl;
 	genArray(array,matrixSize);
 	printArray(array,matrixSize);
+	cout<< endl;
+	cout<<"Sorted Array" << endl;
 	bubbleSort(array,matrixSize);
 	printArray(array,matrixSize);
 
