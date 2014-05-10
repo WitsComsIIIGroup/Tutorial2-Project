@@ -19,34 +19,3 @@ void permuteArray(int arr[], int n)
 }
 
 
-/*
-void printarr(int arr[], int s)
-{
-     for (int i = 0; i < s; i++)
-     {
-         cout << arr[i] << endl;
-     }
-}
-
-
-int main()
-{
-    int size;
-    cout << "Please enter size of array: ";
-    cin >> size;
-    cout << endl << endl;
-    int a [size];
-    for(int i = 0; i < size; i++)
-    {
-            a[i] = rand() % 101;
-    }
-    printarr(a,size);
-    randomize(a,size);
-    cout << endl << endl << endl;
-    printarr(a,size);
-    
-    system("pause");
-    return 0;
-}
-*/
-

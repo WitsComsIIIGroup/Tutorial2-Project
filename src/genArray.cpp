@@ -13,12 +13,3 @@ void genArray(int array[],int matrixSize){
     }
 }
 
-
-//int main()
-//{
-//  cout<<"enter number"<<endl;
-//  cin>>first;
-//  genArray(first);
-//  system("pause");
-//  return 0;
-//}
