@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void randomize(int arr[], int n)
+void permuteArray(int arr[], int n)
 {
      srand(time(NULL));
      
@@ -18,6 +18,8 @@ void randomize(int arr[], int n)
      }
 }
 
+
+/*
 void printarr(int arr[], int s)
 {
      for (int i = 0; i < s; i++)
@@ -25,6 +27,7 @@ void printarr(int arr[], int s)
          cout << arr[i] << endl;
      }
 }
+
 
 int main()
 {
@@ -45,3 +48,5 @@ int main()
     system("pause");
     return 0;
 }
+*/
+

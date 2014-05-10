@@ -3,6 +3,7 @@
 #include <cmath>
 #include <iostream>
 #include <stdlib.h>
+#include <assert.h>
 
 using namespace std;
 
@@ -75,7 +76,7 @@ void heapSort(int* arr, int size)
     return;
 }
 
-void displayArray(int* arr, int size) 
+void displayArray(int arr[], int size)
 {
      for(int i = 0; i < size; i++)
      {
@@ -83,6 +84,8 @@ void displayArray(int* arr, int size)
      }
 }
 
+
+/*
 int main() {
     int size;
     cin >> size;
@@ -93,24 +96,25 @@ int main() {
     }
     cout << "Unsorted array:" << endl << endl;
     //displayArray(a,size);
-    
-    /*time_t start = time(0);
-    heapSort(a,size);
-    time_t end = time(0);
-    double time = difftime(end, start) * 1000.0;*/
-    
+
+//    time_t start = time(0);
+//    heapSort(a,size);
+//    time_t end = time(0);
+//    double time = difftime(end, start) * 1000.0;
+
     cout << endl << endl << "Sorted array:" << endl << endl;
-    
+
     time_t start,end,diff;
 
     start = clock();
     heapSort(a,size);
     end = clock();
     diff = end - start;
-    
-    
+
+
     //displayArray(a,size);
     cout << endl << endl << endl << "Time taken: " << diff << "ms with n = " << size << endl << endl;
     system("pause");
     return 0;
 }
+*/
