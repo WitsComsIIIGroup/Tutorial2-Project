@@ -4,46 +4,46 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/genArray.cpp \
-../src/heapSort.cpp \
-../src/main.cpp \
-../src/permuteArr.cpp \
-../src/testProg.cpp 
+../SourceFiles/genArray.cpp \
+../SourceFiles/heapSort.cpp \
+../SourceFiles/main.cpp \
+../SourceFiles/permuteArr.cpp \
+../SourceFiles/testProg.cpp 
 
 CC_SRCS += \
-../src/PrintArray.cc \
-../src/bubbleSort.cc 
+../SourceFiles/PrintArray.cc \
+../SourceFiles/bubbleSort.cc 
 
 OBJS += \
-./src/PrintArray.o \
-./src/bubbleSort.o \
-./src/genArray.o \
-./src/heapSort.o \
-./src/main.o \
-./src/permuteArr.o \
-./src/testProg.o 
+./SourceFiles/PrintArray.o \
+./SourceFiles/bubbleSort.o \
+./SourceFiles/genArray.o \
+./SourceFiles/heapSort.o \
+./SourceFiles/main.o \
+./SourceFiles/permuteArr.o \
+./SourceFiles/testProg.o 
 
 CC_DEPS += \
-./src/PrintArray.d \
-./src/bubbleSort.d 
+./SourceFiles/PrintArray.d \
+./SourceFiles/bubbleSort.d 
 
 CPP_DEPS += \
-./src/genArray.d \
-./src/heapSort.d \
-./src/main.d \
-./src/permuteArr.d \
-./src/testProg.d 
+./SourceFiles/genArray.d \
+./SourceFiles/heapSort.d \
+./SourceFiles/main.d \
+./SourceFiles/permuteArr.d \
+./SourceFiles/testProg.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o: ../src/%.cc
+SourceFiles/%.o: ../SourceFiles/%.cc
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-src/%.o: ../src/%.cpp
+SourceFiles/%.o: ../SourceFiles/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
