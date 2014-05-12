@@ -4,5 +4,5 @@ using namespace std;
 void testProg(int matrixSize);
 
 int main(){
-	testProg(50000);
+	testProg(20000);
 }
