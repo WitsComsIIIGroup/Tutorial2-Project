@@ -12,5 +12,5 @@ using namespace std;
 void testProg(int matrixSize);
 
 int main(){
-	testProg(100);
+	testProg(10000);
 }
